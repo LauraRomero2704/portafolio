@@ -1,4 +1,454 @@
+
+/* FUENTES */
+@font-face
+{
+    font-family: fuente;
+    src: url(../fuentes/Lemon\ Love.ttf)
+}
+
+@font-face
+{
+    font-family: fuenteParrafo;
+    src: url(../fuentes/CaviarDreams.ttf);
+}
+
+@font-face
+{
+    font-family: fuenteTitulo;
+    src: url(../fuentes/CaviarDreams_Bold.ttf);
+}
+
+@font-face
+{
+    font-family: fuenteNegrota;
+    src: url(../fuentes/Little\ Comet\ Demo\ Version.otf);
+}
+
+
+/* PAGINA */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body 
 {
-    background-color: aqua;
+    background-image: url(../fondo.png);
+}
+
+html
+{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.header
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    max-width: 1540px;
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.abajo
+{
+    background: #161717;
+}
+
+.titulo
+{
+    font-size: 36px;
+    color: #d8d8d8;
+    margin-left: 15px;
+    font-family: fuente;
+    margin-right: 150px;
+    text-decoration: none;
+}
+
+.nav-list
+{
+    display: flex;
+    list-style: none;
+}
+
+.icon
+{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.nav-enlace
+{
+    padding: 3px;
+    color: #fff;
+    margin: 0 15px;
+    transition: .5s;
+    font-weight: 600;
+    text-align: none;
+    text-decoration: none;
+    font-family: fuenteParrafo;
+}
+
+.nav-enlace:hover
+{
+    color: #FDAA09;
+}
+
+.nav-responsive
+{
+    color:#fff;
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+
+/* SECTION */
+.section
+{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.contenedor
+{
+    color: #fff;
+    display: flex;
+    margin-top: -40px;
+    padding: 30px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Titulo
+{  
+    width: 73%;
+    color: #000;
+    font-size: 23px; 
+    padding: 13px 15px;
+    margin-bottom: 50px;
+    font-family: fuenteParrafo; 
+    border: 0.3px solid #B6D0F7;
+    box-shadow: 1px 1px 6px #B6D0F7;
+    animation: animate__fadeIn; /* referring directly to the animation's @keyframe declaration */
+
+    background: #FC5419;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FDAA09, #FC5419);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FDAA09, #FC5419); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
+.subTitulo
+{  
+    font-size: 45px; 
+    margin-bottom: 13px;
+    letter-spacing: 3px;
+    font-family: fuente; 
+}
+
+.parrafo
+{  
+    font-size: 23px; 
+    font-weight: 300;
+    font-family: fuenteParrafo;
+}
+
+.cont-img
+{  
+    margin-right: 10%;
+    animation: animate__fadeIn; /* referring directly to the animation's @keyframe declaration */
+}
+
+.img
+{  
+    width: 125%;
+}
+
+
+/* SECCION SOBRE MI */
+.sobremi
+{
+    color: #fff;
+    padding: 30px 60px;
+    background-color: #161717ac;
+}
+
+.contenido-seccion
+{
+    margin: auto;
+    max-width: 1540px;
+}
+
+.contenido-seccion h2
+{
+    font-size: 48px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: fuenteTitulo;
+}
+
+.contenido-seccion p
+{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: fuenteParrafo;
+}
+
+.contenido-seccion p span
+{
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.fila
+{
+    width: 80%;
+    margin:auto;
+    display: flex;
+}
+
+.col
+{
+    width: 50%;
+}
+
+.col h3
+{
+    font-size: 28px;
+    color: #FDAA09;
+    margin-bottom: 25px;
+    font-family: fuenteTitulo;
+}
+
+.col ul
+{
+    list-style: none;
+}
+
+.col ul li
+{
+    margin: 12px 0;
+    font-family: fuenteParrafo;
+}
+
+.col ul li span
+{
+    margin-right: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contenedor-intereses
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interes
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    transition: .3s;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #252A2E;
+    font-family: fuenteParrafo;
+}
+
+.interes:hover
+{
+    color: #252A2E;
+    background-color: #FDAA09;
+}
+
+.interes i
+{
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+
+
+/* Seccion Habilidades */
+.skills
+{
+    color: #fff;
+    padding: 50px 20px;
+    background-color: none;
+}
+
+.contenido-seccion
+{
+    margin: auto;
+    max-width: 1540px;
+}
+
+.skills h2
+{
+    font-size: 48px;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: fuenteTitulo;
+}
+
+.fila
+{
+    display: flex;
+}
+
+.col 
+{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.col h3
+{
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: fuenteTitulo;
+}
+
+.skill > span
+{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: fuenteParrafo;
+}
+
+.skill .barra-skill
+{
+    width: 80%;
+    height: 8px;
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #131517;
+}
+
+.skill .progreso
+{
+    top: 0;
+    left: 0;
+    height: 8px;
+    position: absolute;
+    background-color: #d8d8d8;
+}
+
+.barra-skill span
+{
+    top: -17px;
+    width: 40px;
+    right: -15px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #252A2E;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+    font-family: fuenteParrafo;
+    background-color: #d8d8d8;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.javascript
+{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript 
+{
+    0%{width: 0%;}
+    100%{width: 15%;}
+}
+
+.htmlcss
+{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss 
+{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.java
+{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss 
+{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skill .comunicacion
+{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion 
+{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skill .trabajo
+{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+
+@keyframes trabajo 
+{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad 
+{
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skill .dedicacion
+{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion 
+{
+    0%{width: 0%;}
+    100%{width: 90%;}
 }

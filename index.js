@@ -9,7 +9,7 @@ const port = 3000
 const path = require('path')
 
 // Archivos Estaticos
-app.use('/static/img', express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Vistas
 app.set('view engine', 'ejs')
