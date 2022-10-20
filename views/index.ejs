@@ -1,19 +1,19 @@
 <%- include('template/header'); %> 
-    
 
-    <!-- Section -->
-    <section class="section">
-        <div class="contenedor">
-            <div class="cont-text">
-                <h1 class="animate__zoomIn Titulo"> Bienvenidos a mi portafolio </h1>
-                <h2 class="subTitulo"> Laura Romero </h2>
-                <h3 class="parrafo"> Analista y Desarrolladora de Sistemas de Información </h3>
+        <!-- Section -->
+        <section class="section">
+            <div class="contenedor">
+                <div class="cont-text">
+                    <h1 class="animate__zoomIn Titulo"> Bienvenidos a mi portafolio </h1>
+                    <h2 class="subTitulo"> Laura Romero </h2>
+                    <h3 class="parrafo"> Analista y Desarrolladora de Sistemas de Información </h3>
+                </div>
+                <div class="cont-img">
+                    <img src="./../static/animacion.png" class="animate__animated animate__bounceIn img" alt="astronauta">
+                </div>
             </div>
-            <div class="cont-img">
-                <img src="./../static/animacion.png" class="animate__animated animate__bounceIn img" alt="astronauta">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Seccion Sobre Mi -->
     <section id="sobremi" class="sobremi">
@@ -93,43 +93,50 @@
         </div>
     </section>
 
-    <!-- Seccion Habilidades -->
-    <section class="skills" id="habilidades">
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2> Habilidades </h2>
             <div class="fila">
-
-                <!-- Habiliades Tecnicas -->
+                <!-- Technical Skill -->
                 <div class="col">
-                    <h3> Habiliades Tecnicas </h3>
+                    <h3> Habilidades tecnicas</h3>
                     <div class="skill">
                         <span> Javascript </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>15%</span>
+                                <span>25%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>HTML & CSS</span>
+                        <span> HTML & CSS </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span> 90% </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span> JAVA </span>
+                        <span> Java </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>85%</span>
+                                <span> 70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> MySql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 90%</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Habilidades Profesionales -->
+                <!-- Professional Skills -->
                 <div class="col">
-                    <h3> Habilidades Profesionales </h3>
+                    <h3> Habilidades profesionales </h3>
                     <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
@@ -139,10 +146,10 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span> Trabajo en Equipo </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -150,7 +157,7 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>95%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -158,7 +165,7 @@
                         <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -166,6 +173,59 @@
             </div>
         </div>
     </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./../static/jardin.jpg" alt="jardin">
+                    <div class="overlay">
+                        <br> <h3> Sistema de Matriculas </h3> <br>
+                        <p> Jardin Infantil <br> HTML, CSS y PHP </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./../static/auto.jpg" alt="auto">
+                    <div class="overlay">
+                        <br> <h3> Sistema de Gestion de Vehiculos </h3> <br>
+                        <p> Concesionario <br> HTML, CSS y JAVA </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./../static/ropa.jpg" alt="">
+                    <div class="overlay">
+                        <br> <h3> Sistema de Pedidos y Personalizacion </h3> <br>
+                        <p> Prendas de Jean <br> HTML, CSS, JAVASCRIPT <br> y JAVA </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea class="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="icon-paperplane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('template/footer'); %>
 
 </body>
 </html>

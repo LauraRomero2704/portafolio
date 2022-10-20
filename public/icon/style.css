@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?pd3dsg');
-  src:  url('fonts/icomoon.eot?pd3dsg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?pd3dsg') format('truetype'),
-    url('fonts/icomoon.woff?pd3dsg') format('woff'),
-    url('fonts/icomoon.svg?pd3dsg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?uxesri');
+  src:  url('fonts/icomoon.eot?uxesri#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uxesri') format('truetype'),
+    url('fonts/icomoon.woff?uxesri') format('woff'),
+    url('fonts/icomoon.svg?uxesri#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-up:before {
+  content: "\e913";
+}
 .icon-aircraft:before {
   content: "\e901";
 }
@@ -73,6 +76,15 @@
 .icon-airplane:before {
   content: "\e9af";
 }
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
 .icon-cassette:before {
   content: "\e90b";
 }
@@ -84,4 +96,7 @@
 }
 .icon-bike:before {
   content: "\e911";
+}
+.icon-paperplane:before {
+  content: "\e914";
 }

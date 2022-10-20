@@ -1,0 +1,73 @@
+
+/* FUENTES */
+@font-face
+{
+    font-family: fuente;
+    src: url(../fuentes/Lemon\ Love.ttf)
+}
+
+@font-face
+{
+    font-family: fuenteParrafo;
+    src: url(../fuentes/CaviarDreams.ttf);
+}
+
+@font-face
+{
+    font-family: fuenteTitulo;
+    src: url(../fuentes/CaviarDreams_Bold.ttf);
+}
+
+@font-face
+{
+    font-family: fuenteNegrota;
+    src: url(../fuentes/Little\ Comet\ Demo\ Version.otf);
+}
+
+
+/* PAGINA */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-image: url(../fondo.png);
+}
+
+.error
+{
+    width: 55%;
+    margin: auto;
+    margin-left: 20%;
+}
+
+.titulo
+{
+    font-family: fuenteTitulo;
+    color: #ffb222;
+    margin: 1% 0 1.5% 37%;
+    text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.769);
+}
+
+.enlace
+{
+    font-family: fuenteParrafo;
+    color: #ffb222;
+    margin-left: 41%;
+    margin-top: 50%;
+    text-shadow: 2px 1px 10px #fff;
+}
+
+.boton
+{
+    background: transparent;
+    border: 2px solid #03C5FC;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 10px;
+    box-shadow: 1px 1px 8px #ffb222;
+}
