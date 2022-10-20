@@ -1,19 +1,78 @@
 <%- include('template/header'); %>
 
-    <!-- Section -->
-    <section class="section">
-        <div class="contenedor">
-            <div class="cont-text">
-                <h1 class="animate__zoomIn Titulo"> Bienvenidos a mi portafolio </h1>
-                <h2 class="subTitulo"> A continuación les mostrare... </h2>
-                <h3 class="parrafo"> Toda mi vida acádemica </h3>
+    <div class="pantallazo">
+        <!-- Section -->
+        <section class="section_">
+            <div class="contenedor">
+                <div class="cont-text">
+                    <h1 class="animate__zoomIn Titulo"> Bienvenidos a mi portafolio </h1>
+                    <h2 class="subTitulo"> A continuacion les mostrare... </h2>
+                    <h3 class="parrafo"> Toda mi vida acádemica </h3>
+                </div>
+                <div class="cont-image">
+                    <img src="./../static/educacioon.png" class="animate__animated animate__bounceIn img" alt="astronauta">
+                </div>
             </div>
-            <div class="cont-img">
-                <img src="./../static/animacion.png" class="animate__animated animate__bounceIn img" alt="astronauta">
+        </section>
+    </div>
+
+    <!-- Seccion Sobre Mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2> Primaria </h2>
+            <p> <span> Hola, soy Laura Romero, </span> te cuento que yo estudie 9 años en el mismo colegio, 
+                aunque luego de 6 años cambio de conseción, y el colegio ya no era el mismo.
+            </p>
+
+            <div class="fila">
+
+                <!-- Datos Personales -->
+                <div class="col">
+                    <img src="./../static/colegio1.jpg">
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3> Intereses </h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="icon-headphone"></i>
+                            <span> MUSICA </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-aircraft"></i>
+                            <span> VIAJAR </span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="icon-bird"></i>
+                            <span> ANIMALES </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-soccer"></i>
+                            <span> DEPORTE </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-bookmark"></i>
+                            <span> LIBROS </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-car"></i>
+                            <span> CARROS </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-bike"></i>
+                            <span> MOTOS </span>
+                        </div>
+                        <div class="interes">
+                            <i class="icon-camera"></i>
+                            <span> FOTOS </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-</div>
 
 <%- include('template/footer'); %>
 

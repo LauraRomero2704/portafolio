@@ -1,0 +1,16 @@
+
+.section_
+{   
+    margin: 0 6% 0 6%;
+}
+
+.cont-image
+{  
+    margin-left: 10%;
+    animation: animate__fadeIn;
+}
+
+.img
+{  
+    width: 140%;
+}

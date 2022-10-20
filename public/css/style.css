@@ -45,11 +45,6 @@ html
     scroll-behavior: smooth;
 }
 
-.pantallazo
-{
-    height: 100vh;
-}
-
 /* MENU */
 .header
 {
@@ -71,6 +66,28 @@ header.abajo
 }
 
 /* TITULO */
+.icono:hover
+{
+    background: #FC5419; 
+    background: -webkit-linear-gradient(to left, #FDAA09, #FC5419);
+    background: linear-gradient(to left, #FDAA09, #FC5419); 
+    background: linear-gradient(#FC5419, #FDAA09);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo:hover
+{
+    background: #FC5419; 
+    background: -webkit-linear-gradient(to left, #FDAA09, #FC5419);
+    background: linear-gradient(to left, #FDAA09, #FC5419); 
+    background: linear-gradient(#FC5419, #FDAA09);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .titulo
 {
     padding-top: 50px;
@@ -124,6 +141,11 @@ header.abajo
 
 
 /* SECTION */
+.pantallazo
+{
+    height: calc(100vh - 130px);
+}
+
 .section
 {   
     margin: 0 8% 0 8%;
