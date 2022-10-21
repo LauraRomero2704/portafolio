@@ -1,12 +1,11 @@
 
 .section_
 {   
-    margin: 0 6% 0 6%;
+    margin: -5% 6% 0 6%;
 }
 
 .cont-image
 {  
-    margin-left: 10%;
     animation: animate__fadeIn;
 }
 
@@ -14,3 +13,49 @@
 {  
     width: 140%;
 }
+
+.colegio1
+{  
+    width: 60%;
+    height: 250px;
+    filter: saturate(180%);
+    box-shadow: 1px 1px 8px 1px #FC5419;
+}
+
+.fila
+{
+    align-items: center;
+}
+
+
+.col-info
+{
+    width: 50%;
+}
+
+.col-info h3
+{
+    font-size: 28px;
+    color: #FDAA09;
+    margin-bottom: 25px;
+    font-family: fuenteTitulo;
+}
+
+.col-info ul
+{
+    list-style: none;
+}
+
+.col-info ul li
+{
+    margin: 12px 0;
+    font-family: fuenteParrafo;
+}
+
+.col-info ul li span
+{
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 15px;
+}
+

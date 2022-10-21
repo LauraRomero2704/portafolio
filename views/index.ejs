@@ -15,6 +15,7 @@
                 </div>
             </div>
         </section>
+
     </div>
 
     <!-- Seccion Sobre Mi -->
@@ -103,35 +104,43 @@
                 <!-- Technical Skill -->
                 <div class="col">
                     <h3> Habilidades tecnicas</h3>
-                    <div class="skill">
-                        <span> Javascript </span>
+                    <div class="skill js">
+                        <span class="js-"> Javascript </span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>25%</span>
+                            <div class="progreso js_">
+                                <span class="js_"> 25% </span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span> HTML & CSS </span>
+                    <div class="skill html">
+                        <span class="html-"> HTML </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span> 90% </span>
+                                <span class="html_"> 85% </span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span> Java </span>
+                    <div class="skill css">
+                        <span class="css-"> CSS </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span> 70%</span>
+                                <span class="css_"> 85% </span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span> MySql</span>
+                    <div class="skill java">
+                        <span class="java-"> Java </span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span> 90%</span>
+                                <span class="java_"> 70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill mysql">
+                        <span class="mysql-"> MySql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="mysql_"> 90%</span>
                             </div>
                         </div>
                     </div>
@@ -139,35 +148,35 @@
                 <!-- Professional Skills -->
                 <div class="col">
                     <h3> Habilidades profesionales </h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
+                    <div class="skill com">
+                        <span class="com-">Comunicación</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
+                            <div class="progreso com_">
+                                <span class="com_">80%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span> Trabajo en Equipo </span>
+                    <div class="skill trab">
+                        <span class="trab-"> Trabajo en Equipo </span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
+                            <div class="progreso trab_">
+                                <span class="trab">85%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
+                    <div class="skill crea">
+                        <span class="crea-">Creatividad</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
+                            <div class="progreso crea_">
+                                <span class="crea_">85%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
+                    <div class="skill ded">
+                        <span class="ded-">Dedicación</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
+                            <div class="progreso ded_">
+                                <span class="ded_">70%</span>
                             </div>
                         </div>
                     </div>
@@ -213,13 +222,27 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea class="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <i class="icon-user"></i>
+                    <label for="nombre" class="form_label"> Nombre </label>
+                    <input type="text" id="nombre">
+                    
+                    <i class="icon-phone2"></i>
+                    <label for="numero" class="form_label"> Numero de Celular </label>
+                    <input type="text" id="numero">
+                    
+                    <i class="icon-paper-plane"></i>
+                    <label for="correo" class="form_label"> Correo </label>
+                    <input type="text" id="correo">
+                    
+                    <i class="icon-bullhorn"></i>
+                    <label for="asunto" class="form_label"> Asunto </label>
+                    <input type="text" id="asunto">
+                    
+                    <i class="icon-message"></i>
+                    <label for="mensaje" class="form_label"> Mensaje </label>
+                    <textarea class="mensaje" name="" id="mensaje" ></textarea>
                     <button>
-                        Enviar Mensaje <i class="icon-paperplane"></i>
+                        Enviar Mensaje
                         <span class="overlay"></span>
                     </button>
                 </div>
